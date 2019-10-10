@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
+@import './variables.scss';
+@import './base.scss';
+
+  .sea-widget {
+    width: $width-sea-widget;
+    height: $height-sea-widget;
+    display: flex;
+    margin: 100px;
+    &__fon {
+      width: 100%;
+    }
+    &__shadow {
+      width: $width-sea-widget;
+      height: $height-sea-widget - ($height-sea-widget * 0.7146);
+      opacity: 0.5;
+      background-color: #000000;
+      position: absolute;
+      top: ($height-sea-widget * 0.7146) + 100;
+      left: 100px;
+    }
+    &__text {
+    width: 444px;
+    height: 95px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+    color: $color-text;
+    position: absolute;
+    top: 469px;
+    left: 128px;
+    overflow: hidden; 
+    }
+    &__button {
+      width: 201px;
+      height: 58px;
+      border-radius: 100px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      background-image: linear-gradient(101deg, #0189ff 1%, #2d3ed5);
+      position: absolute;
+      top: 368px;
+      left: 851px;
+      border: none;
+    }
+    &__arrow-back{
+      width: 39.9px;
+      height: 4px;/*21.5px;*/
+      transform: rotate(-180deg);
+      background-image: linear-gradient(110deg, #0189ff 1%, #2d3ed5);
+      position: absolute;
+      top: 584.5px;/*575px;*/
+      left: 530px;
+    }
+  &__arrow-forward {
+    width: 39.9px;
+    height: 4px;/*21.5px;*/
+    background-image: linear-gradient(110deg, #0189ff 1%, #2d3ed5);
+    position: absolute;
+    top: 584.75px;/*575px;*/
+    left: 140px;
+  }
+  &__circle {
+    width: $size-point-border;
+    height: $size-point-border;
+    border-radius: 100%;
+    border: 1px solid $color-point-border;
+    position: absolute;
+    top: 580px;
+    left: 281px;
+  }
+  &__circle_point {
+    width: $size-point;
+    height: $size-point;
+    border-radius: 100%;
+    background: $color-point-border;
+    position: absolute;
+    top: 583px;
+    left: 284px;
+  }
+  &__point {
+    width: $size-point;
+    height: $size-point;
+    border-radius: 100%;
+    background: $color-point;
+    position: absolute;
+    top: 583px;
+  }
+  &__point:first-child {
+    left: 284px;
+  }
+  &__point:nth-child(2) {
+    left: 315px;
+  }
+  &__point:nth-child(3) {
+    left: 346px;
+  }
+  &__point:nth-child(4) {
+    left: 376px;
+  }
+  &__point:nth-child(5) {
+    left: 407px;
+  }
+  }

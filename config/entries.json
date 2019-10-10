@@ -37,5 +37,23 @@
   ],
   "lesson_8": [
     "./src/lesson_8/lesson_8.js"
+  ],
+  "hw_lesson_9": [
+    "./src/hw_lesson_9/hw_lesson_9.js"
+  ],
+  "hw_lesson_7": [
+    "./src/hw_lesson_7/hw_lesson_7.js"
+  ],
+  "lesson_9": [
+    "./src/lesson_9/lesson_9.js"
+  ],
+  "lesson_10": [
+    "./src/lesson_10/lesson_10.js"
+  ],
+  "lesson_11": [
+    "./src/lesson_11/lesson_11.js"
+  ],
+  "hw_lesson_11": [
+    "./src/hw_lesson_11/hw_lesson_11.js"
   ]
 }

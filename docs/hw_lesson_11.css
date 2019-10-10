@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(#34a6ff, #477cff);
+  height: 100vh; }
+
+.header {
+  text-align: center; }
+
+.traffic-light {
+  width: 70px;
+  height: 240px;
+  background: #222;
+  border-radius: 8px;
+  margin: auto;
+  padding: 15px; }
+  .traffic-light .light {
+    display: inline-block;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+    opacity: 0.2;
+    text-align: center; }
+    .traffic-light .light.active {
+      border-width: 8px;
+      box-shadow: 0px 2px 8px 0px #bebaba;
+      border-radius: 50%;
+      opacity: 1; }
+
+.red {
+  background: red; }
+
+.yellow {
+  background: yellow; }
+
+.green {
+  background: green; }
+
+
+/*# sourceMappingURL=hw_lesson_11.css.map*/

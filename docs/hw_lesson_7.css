@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap);
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background-color: #6a62d2; }
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+.sea-widget {
+  width: 500px;
+  height: 515px;
+  display: flex;
+  margin: 100px; }
+  .sea-widget__fon {
+    width: 100%; }
+  .sea-widget__shadow {
+    width: 500px;
+    height: 146.981px;
+    opacity: 0.5;
+    background-color: #000000;
+    position: absolute;
+    top: 468.019px;
+    left: 100px; }
+  .sea-widget__text {
+    width: 444px;
+    height: 95px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 469px;
+    left: 128px;
+    overflow: hidden; }
+  .sea-widget__button {
+    width: 201px;
+    height: 58px;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(101deg, #0189ff 1%, #2d3ed5);
+    position: absolute;
+    top: 368px;
+    left: 851px;
+    border: none; }
+  .sea-widget__arrow-back {
+    width: 39.9px;
+    height: 4px;
+    /*21.5px;*/
+    transform: rotate(-180deg);
+    background-image: linear-gradient(110deg, #0189ff 1%, #2d3ed5);
+    position: absolute;
+    top: 584.5px;
+    /*575px;*/
+    left: 530px; }
+  .sea-widget__arrow-forward {
+    width: 39.9px;
+    height: 4px;
+    /*21.5px;*/
+    background-image: linear-gradient(110deg, #0189ff 1%, #2d3ed5);
+    position: absolute;
+    top: 584.75px;
+    /*575px;*/
+    left: 140px; }
+  .sea-widget__circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    border: 1px solid #097af7;
+    position: absolute;
+    top: 580px;
+    left: 281px; }
+  .sea-widget__circle_point {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: #097af7;
+    position: absolute;
+    top: 583px;
+    left: 284px; }
+  .sea-widget__point {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: #d8d8d8;
+    position: absolute;
+    top: 583px; }
+  .sea-widget__point:first-child {
+    left: 284px; }
+  .sea-widget__point:nth-child(2) {
+    left: 315px; }
+  .sea-widget__point:nth-child(3) {
+    left: 346px; }
+  .sea-widget__point:nth-child(4) {
+    left: 376px; }
+  .sea-widget__point:nth-child(5) {
+    left: 407px; }
+
+
+/*# sourceMappingURL=hw_lesson_7.css.map*/

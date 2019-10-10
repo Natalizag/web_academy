@@ -1,0 +1,1 @@
+import './hw_lesson_7.scss';
