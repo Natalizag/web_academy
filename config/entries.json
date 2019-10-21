@@ -55,5 +55,29 @@
   ],
   "hw_lesson_11": [
     "./src/hw_lesson_11/hw_lesson_11.js"
+  ],
+  "lesson_12": [
+    "./src/lesson_12/lesson_12.js"
+  ],
+  "lesson_13": [
+    "./src/lesson_13/lesson_13.js"
+  ],
+  "lesson_14": [
+    "./src/lesson_14/lesson_14.js"
+  ],
+  "practice_6": [
+    "./src/practice_6/practice_6.js"
+  ],
+  "hw_lesson_14": [
+    "./src/hw_lesson_14/hw_lesson_14.js"
+  ],
+  "practice_7": [
+    "./src/practice_7/practice_7.js"
+  ],
+  "practice_7_1": [
+    "./src/practice_7_1/practice_7_1.js"
+  ],
+  "hw_practice_7": [
+    "./src/hw_practice_7/hw_practice_7.js"
   ]
 }

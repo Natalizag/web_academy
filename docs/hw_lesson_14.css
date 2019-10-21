@@ -1,0 +1,28 @@
+body {
+  background: linear-gradient(#34a6ff, #477cff);
+  height: 100vh; }
+
+.header {
+  text-align: center; }
+
+.page {
+  display: flex; }
+
+.block {
+  width: 100px;
+  height: 150px;
+  margin: auto; }
+  .block .circle {
+    width: 70px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: auto;
+    padding: 15px; }
+  .block .btn {
+    width: 100%;
+    height: 25px;
+    border: none; }
+
+
+/*# sourceMappingURL=hw_lesson_14.css.map*/
