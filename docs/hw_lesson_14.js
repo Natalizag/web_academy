@@ -98,46 +98,96 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hw_lesson_14_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hw_lesson_14.scss */ "./src/hw_lesson_14/hw_lesson_14.scss");
 /* harmony import */ var _hw_lesson_14_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hw_lesson_14_scss__WEBPACK_IMPORTED_MODULE_0__);
 
+var lamps = document.querySelectorAll('.block');
 
-var _int;
-
-var button = document.querySelector('.btn');
-var lamp = document.querySelector('.circle');
-
-function randomValue(max) {
-  return Math.floor(Math.random() * max);
+for (var i = 0; i < lamps.length; i++) {
+  lampSwitcher(lamps[i]);
 }
 
-function getRandomColor() {
-  return 'rgb(' + randomValue(255) + ', ' + randomValue(255) + ', ' + randomValue(255) + ')';
-}
+function lampSwitcher(rootElement) {
+  var _int;
 
-function setColor() {
-  lamp.style.background = getRandomColor();
-}
+  var button = rootElement.querySelector('.block__btn');
+  var lamp = rootElement.querySelector('.block__circle');
 
-function start() {
-  clearInterval(_int);
-  setColor();
-  _int = setInterval(function () {
-    setColor();
-  }, 1000);
-}
-
-function stop() {
-  clearInterval(_int);
-  lamp.style.background = '';
-}
-
-function toggle() {
-  if (lamp.style.background === '') {
-    start();
-  } else {
-    stop();
+  function randomValue(max) {
+    return Math.floor(Math.random() * max);
   }
-}
 
-button.onclick = toggle;
+  function getRandomColor() {
+    return 'rgb(' + randomValue(255) + ', ' + randomValue(255) + ', ' + randomValue(255) + ')';
+  }
+
+  function setColor() {
+    lamp.style.background = getRandomColor();
+  }
+
+  function start() {
+    clearInterval(_int);
+    setColor();
+    _int = setInterval(function () {
+      setColor();
+    }, 1000);
+  }
+
+  function stop() {
+    clearInterval(_int);
+    lamp.style.background = '';
+  }
+
+  function toggle() {
+    if (lamp.style.background === '') {
+      start();
+    } else {
+      stop();
+    }
+  }
+
+  button.onclick = toggle;
+} // lampSwitcher(document.querySelector('#block1'));
+// lampSwitcher(document.querySelector('#block2'));
+// lampSwitcher(document.querySelector('#block3'));
+// lampSwitcher(document.querySelector('#block4'));
+// lampSwitcher(document.querySelector('#block5'));
+// let int;
+// const button = document.querySelector('.btn');
+// const lamp = document.querySelector('.circle');
+// function randomValue(max) {
+//     return Math.floor(Math.random() * max);
+// }
+// function getRandomColor() {
+//     return (
+//         'rgb(' +
+//         randomValue(255) +
+//         ', ' +
+//         randomValue(255) +
+//         ', ' +
+//         randomValue(255) +
+//         ')'
+//     );
+// }
+// function setColor() {
+//     lamp.style.background = getRandomColor();
+// }
+// function start() {
+//     clearInterval(int);
+//     setColor();
+//     int = setInterval(function () {
+//         setColor();
+//     }, 1000);
+// }
+// function stop() {
+//     clearInterval(int);
+//     lamp.style.background = '';
+// }
+// function toggle() {
+//     if (lamp.style.background === '') {
+//         start()
+//     } else {
+//         stop()
+//     }
+// }
+// button.onclick = toggle;
 
 /***/ }),
 

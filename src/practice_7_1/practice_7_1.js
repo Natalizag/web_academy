@@ -6,10 +6,10 @@ for (let i = 0; i < lamps.length; i++) {
     lampSwitcher(lamps[i]);
 }
 
-lampSwitcher(document.querySelector('#lamp1'));
-lampSwitcher(document.querySelector('#lamp2'));
-lampSwitcher(document.querySelector('#lamp3'));
-lampSwitcher(document.querySelector('#lamp4'));
+// lampSwitcher(document.querySelector('#lamp1'));
+// lampSwitcher(document.querySelector('#lamp2'));
+// lampSwitcher(document.querySelector('#lamp3'));
+// lampSwitcher(document.querySelector('#lamp4'));
 
 function lampSwitcher(rootElement) {
     const lamp = rootElement.querySelector('.lamp__light');

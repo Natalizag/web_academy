@@ -79,5 +79,8 @@
   ],
   "hw_practice_7": [
     "./src/hw_practice_7/hw_practice_7.js"
+  ],
+  "lesson_15": [
+    "./src/lesson_15/lesson_15.js"
   ]
 }
