@@ -82,5 +82,11 @@
   ],
   "lesson_15": [
     "./src/lesson_15/lesson_15.js"
+  ],
+  "hw_lesson_15": [
+    "./src/hw_lesson_15/hw_lesson_15.js"
+  ],
+  "lesson_16": [
+    "./src/lesson_16/lesson_16.js"
   ]
 }

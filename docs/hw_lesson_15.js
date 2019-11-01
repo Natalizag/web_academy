@@ -81,15 +81,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 27);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/lesson_15/clock.js":
-/*!********************************!*\
-  !*** ./src/lesson_15/clock.js ***!
-  \********************************/
+/***/ "./src/hw_lesson_15/clock.js":
+/*!***********************************!*\
+  !*** ./src/hw_lesson_15/clock.js ***!
+  \***********************************/
 /*! exports provided: clock */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -104,6 +104,9 @@ function clock() {
   var minElement;
   var secElement;
   var state = startState;
+  var dayElement;
+  var monthElement;
+  var yearElement;
 
   function renderContainer() {
     clockElement = document.createElement('button');
@@ -120,6 +123,7 @@ function clock() {
     clockElement.addEventListener('click', clickHandler);
     clockElement.addEventListener('contextmenu', function (e) {
       e.preventDefault();
+      initContentDate();
       console.log('HELLO', e);
     });
     stopEventButton.addEventListener('click', function () {
@@ -143,6 +147,13 @@ function clock() {
     }
   }
 
+  function setDate() {
+    var currentDate = new Date();
+    dayElement.textContent = normalisedDate(currentDate.getDate());
+    monthElement.textContent = normalisedDate(currentDate.getMonth() + 1);
+    yearElement.textContent = currentDate.getFullYear();
+  }
+
   function renderContent() {
     clockElement.innerHTML = '';
     hourseElement = document.createElement('div');
@@ -159,6 +170,19 @@ function clock() {
     }
   }
 
+  function renderContentDate() {
+    clockElement.innerHTML = '';
+    dayElement = document.createElement('div');
+    monthElement = document.createElement('div');
+    yearElement = document.createElement('div');
+    dayElement.classList.add('clock__day');
+    monthElement.classList.add('clock__month');
+    yearElement.classList.add('clock__year');
+    clockElement.appendChild(dayElement);
+    clockElement.appendChild(monthElement);
+    clockElement.appendChild(yearElement);
+  }
+
   function switchState() {
     if (state === 'FULL') {
       state = 'SHORT';
@@ -172,6 +196,11 @@ function clock() {
     setTime();
   }
 
+  function initContentDate() {
+    renderContentDate();
+    setDate();
+  }
+
   renderContainer();
   initContent();
 }
@@ -180,18 +209,18 @@ function clock() {
 
 /***/ }),
 
-/***/ "./src/lesson_15/lesson_15.js":
-/*!************************************!*\
-  !*** ./src/lesson_15/lesson_15.js ***!
-  \************************************/
+/***/ "./src/hw_lesson_15/hw_lesson_15.js":
+/*!******************************************!*\
+  !*** ./src/hw_lesson_15/hw_lesson_15.js ***!
+  \******************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _lesson_15_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_15.scss */ "./src/lesson_15/lesson_15.scss");
-/* harmony import */ var _lesson_15_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_15_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clock */ "./src/lesson_15/clock.js");
+/* harmony import */ var _hw_lesson_15_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hw_lesson_15.scss */ "./src/hw_lesson_15/hw_lesson_15.scss");
+/* harmony import */ var _hw_lesson_15_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hw_lesson_15_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clock */ "./src/hw_lesson_15/clock.js");
 
 
 
@@ -214,10 +243,10 @@ myAnalitic();
 
 /***/ }),
 
-/***/ "./src/lesson_15/lesson_15.scss":
-/*!**************************************!*\
-  !*** ./src/lesson_15/lesson_15.scss ***!
-  \**************************************/
+/***/ "./src/hw_lesson_15/hw_lesson_15.scss":
+/*!********************************************!*\
+  !*** ./src/hw_lesson_15/hw_lesson_15.scss ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -225,17 +254,17 @@ myAnalitic();
 
 /***/ }),
 
-/***/ 27:
-/*!******************************************!*\
-  !*** multi ./src/lesson_15/lesson_15.js ***!
-  \******************************************/
+/***/ 28:
+/*!************************************************!*\
+  !*** multi ./src/hw_lesson_15/hw_lesson_15.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/lesson_15/lesson_15.js */"./src/lesson_15/lesson_15.js");
+module.exports = __webpack_require__(/*! ./src/hw_lesson_15/hw_lesson_15.js */"./src/hw_lesson_15/hw_lesson_15.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=lesson_15.js.map
+//# sourceMappingURL=hw_lesson_15.js.map
